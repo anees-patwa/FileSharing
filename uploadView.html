@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form enctype="multipart/form-data" action="uploadCtrl.php" method="POST">
+            <p>
+                <input type="hidden" name="MAX_FILE_SIZE" value="20000000" />
+                <label for="uploadfile_input">Choose a file to upload:</label> 
+                <input name="uploadedfile" type="file"/>
+            </p>
+            <p>
+                <input type="submit" value="Upload File" />
+            </p>
+        </form>
+    </body>
+</html>
