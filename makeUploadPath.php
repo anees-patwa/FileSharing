@@ -1,5 +1,5 @@
 <?php
-   function makeUploadPath($username, $filepath){
+   function makeUploadPath($username, $filename){
        //check valid filename
         if( !preg_match('/^[\w_\.\-]+$/', $filename) ){
             return "Invalid filename";
@@ -11,13 +11,8 @@
             return "Invalid username";
             
         }
-
-        //check username against list of users
-        $users = fopen("users.txt", "r");
-        while(!feof($users)){
-            if(fgets($users) == $username){
-                return sprintf("/~apatwa/public_html/module2Grp/%s/%s", $username, $filename);
-            }
-        }
+        
+        return sprintf("/~apatwa/public_html/module2Grp/%s/%s", $username, $filename);
+      
    } 
 ?>
