@@ -12,7 +12,7 @@
             
         }
         
-        return sprintf("/~apatwa/public_html/module2Grp/%s/%s", $username, $filename);
+        return sprintf("/srv/module2Files/%s/%s", $username, $filename);
       
    } 
 ?>
