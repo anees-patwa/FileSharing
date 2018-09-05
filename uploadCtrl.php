@@ -7,7 +7,7 @@ $username = $_SESSION['username'];
 
 $path = makeUploadPath($username, $filename);
 
-if( move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $full_path) ){
+if( move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $path) ){
 	header("Location: homeView.php");
 	exit;
 }else{
