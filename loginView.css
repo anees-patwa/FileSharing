@@ -1,0 +1,36 @@
+body{
+    background-color: gray;
+}
+
+#login-container{  
+    display: flex;
+    background-color: white;
+    margin-top: 150px;
+    flex-flow: column;
+    height: 500px;
+}
+
+#login{
+    background-color: white;
+    text-align: center;
+    margin-top: 30px;
+   
+}
+
+#user-id{
+   text-align: center;
+   margin-left: 100px;
+   margin-top: 70px;
+   display: inline-block;
+} 
+
+#user-id-input{
+  margin-left: 10px;
+} 
+
+#submit-button{
+    display: block;
+    margin-top: 70px;
+    margin-left: 100px;
+    width: 115px;
+}
