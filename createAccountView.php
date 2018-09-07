@@ -16,7 +16,7 @@ require(navBar.php);
             <div>
                <h1 id="login">Create Account</h1>
             </div>
-            <form action="createAccountCtrl.php">
+            <form action="createAccountCtrl.php" method="POST">
                  <div>
                     <h4 id="user-id">UserID</h4>
                     <input id="user-id-input"type="text">
