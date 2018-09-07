@@ -21,8 +21,17 @@ while (!feof($users)){
 $user = "\n" . $username;
 fwrite($users, $user);
 
-//make user's directory and set permissions
-mkdir(sprintf("/srv/module2Files/%s", $username), 0777);
 
+//make user's directory and set permissions
+require("makeUploadPath.php");
+$dirPath = makeUploadPath($username, null);
+mkdir($dirPath);
+chmod($dirPath, 777);
+
+//set username in session
+$_SESSION['username'] = $username;
+
+//send user to their homepage
+header("Location: homeView.php");
 
 ?>
