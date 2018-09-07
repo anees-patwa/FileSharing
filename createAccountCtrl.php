@@ -1,6 +1,6 @@
 <?php
 session_start();
-$username = $_POST['user-id-input'];
+$username = $_POST['userID'];
 
 //check valid username
 if( !preg_match('/^[\w_\-]+$/', $username) ){
