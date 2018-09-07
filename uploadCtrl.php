@@ -3,7 +3,9 @@ session_start();
 require("makeUploadPath.php");
 
 $filename = basename($_FILES['uploadedfile']['name']);
-$username = $_SESSION['username'];
+//hard-coded username
+//remember to change back to session
+$username = "apatwa";
 
 $path = makeUploadPath($username, $filename);
 
