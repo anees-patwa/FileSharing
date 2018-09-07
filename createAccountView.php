@@ -19,7 +19,7 @@ require("navBar.php");
             <form action="createAccountCtrl.php" method="POST">
                  <div>
                     <h4 id="user-id">UserID</h4>
-                    <input id="user-id-input"type="text">
+                    <input name="userID" id="user-id-input"type="text">
                 </div>
                 <div>
                      <input id="submit-button" type="submit">
