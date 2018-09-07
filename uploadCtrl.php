@@ -8,9 +8,9 @@ $filename = basename($_FILES['uploadedfile']['name']);
 $username = "apatwa";
 
 $path = makeUploadPath($username, $filename);
-chgrp($_FILES['uploadedfile']['tmp_name'], "module2");
+/*chgrp($_FILES['uploadedfile']['tmp_name'], "module2");
 chown($_FILES['uploadedfile']['tmp_name'], "apatwa");
-chmod($_FILES['uploadedfile']['tmp_name'], 0740);
+chmod($_FILES['uploadedfile']['tmp_name'], 0740);*/
 if( move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $path) ){
 	header("Location: homeView.php");
 	exit;
