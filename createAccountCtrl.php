@@ -12,7 +12,7 @@ if( !preg_match('/^[\w_\-]+$/', $username) ){
 $users = fopen("/srv/module2Files/users.txt", "w");
 while (!feof($users)){
     $line = trim(fgets($users));
-    if($line == $username){
+    if(strcmp($line, $username) == 0){
         header("Location: failedCreation.html");
         exit;
     }
