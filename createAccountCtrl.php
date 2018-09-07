@@ -1,4 +1,5 @@
 <?php
+session_start();
 $username = $_POST['user-id-input'];
 
 //check valid username
