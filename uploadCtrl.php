@@ -8,7 +8,7 @@ $filename = basename($_FILES['uploadedfile']['name']);
 $username = "apatwa";
 
 $path = makeUploadPath($username, $filename);
-
+chown($_FILES['uploadedfile']['tmp_name'], "apatwa");
 if( move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $path) ){
 	header("Location: homeView.php");
 	exit;
