@@ -9,9 +9,10 @@ if( !preg_match('/^[\w_\-]+$/', $username) ){
 }
 
 //check if username is in users.txt already
-$users = fopen("/srv/module2Files/users.txt", "w");
+
+$users = fopen("users.txt", "r+");
 while (!feof($users)){
-    $line = fgets($users);
+    $line = trim(fgets($users));
     if(strcmp($line, $username) == 0){
         header("Location: failedCreation.html");
         exit;
