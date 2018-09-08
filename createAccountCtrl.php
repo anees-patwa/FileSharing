@@ -10,17 +10,17 @@ if( !preg_match('/^[\w_\-]+$/', $username) ){
 
 //check if username is in users.txt already
 
-$users = fopen("users.txt", "w");
+$users = fopen("users.txt", "r+");
 while (!feof($users)){
-    echo "<p>" . fgets($users) . "</p>";
-    /*if(strcmp($line, $username) == 0){
+    $line = trim(fgets($users));
+    if(strcmp($line, $username) == 0){
         header("Location: failedCreation.html");
         exit;
-    }*/
+    }
 }
 
 //add new user to users.txt
-/*$user = "\n" . $username;
+$user = "\n" . $username;
 fwrite($users, $user);
 
 
@@ -34,6 +34,6 @@ chmod($dirPath, 777);
 $_SESSION['username'] = $username;
 
 //send user to their homepage
-header("Location: homeView.php");*/
+header("Location: homeView.php");
 
 ?>
