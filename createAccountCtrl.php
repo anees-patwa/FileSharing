@@ -9,7 +9,8 @@ if( !preg_match('/^[\w_\-]+$/', $username) ){
 }
 
 //check if username is in users.txt already
-$users = fopen("/srv/module2Files/users.txt", "w");
+
+$users = fopen("users.txt", "w");
 while (!feof($users)){
     echo "<p>" . fgets($users) . "</p>";
     /*if(strcmp($line, $username) == 0){
