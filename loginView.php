@@ -9,6 +9,7 @@
 
 <?php
 require("navBar.php");
+
 ?>
 
 <body>
@@ -16,10 +17,10 @@ require("navBar.php");
             <div>
                <h1 id="login">User Login</h1>
             </div>
-            <form action="">
+            <form action="checkLogin.php" method="POST">
                  <div>
                     <h4 id="user-id">UserID</h4>
-                    <input id="user-id-input"type="text">
+                    <input id="user-id-input" type="text" name="userID">
                 </div>
                 <div>
                      <input id="submit-button" type="submit">
