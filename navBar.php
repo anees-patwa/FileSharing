@@ -21,6 +21,9 @@
     <li class="nav-item active">
       <a class="nav-link" href="createAccountView.php">Create</a>
     </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="logoutCtrl.php">Logout</a>
+    </li>
   </ul>
 </div>
 </nav>
