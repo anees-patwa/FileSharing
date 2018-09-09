@@ -7,11 +7,6 @@
 <link rel="stylesheet" href="loginView.css">
 </head>
 
-<?php
-require("navBar.php");
-
-?>
-
 <body>
         <div class="container" id="login-container">
             <div>
