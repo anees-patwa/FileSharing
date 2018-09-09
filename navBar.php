@@ -9,14 +9,17 @@
     <li class="nav-item active">
       <a class="nav-link" href="homeView.php">Home <span class="sr-only">(current)</span></a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item active">
       <a class="nav-link" href="uploadView.html">Upload</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item active">
       <a class="nav-link" href="#">Pricing</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
+    <li class="nav-item active">
+      <a class="nav-link" href="loginView.php">Login</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="createAccountView.php">Create</a>
     </li>
   </ul>
 </div>
