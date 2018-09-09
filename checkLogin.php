@@ -1,4 +1,5 @@
 <?php>
+session_start();
 ob_start();
     $userID = $_POST['userID'];
     $file = fopen("users.txt", "r");

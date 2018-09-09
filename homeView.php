@@ -7,10 +7,15 @@
 <link rel="stylesheet" href="loginView.css">
 </head>
 
-</html>
-
 <?php
   require("navBar.php");
   echo "welcome";
     
 ?>
+
+
+<body>
+  
+</body>
+
+</html>

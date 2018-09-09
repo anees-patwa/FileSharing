@@ -18,6 +18,9 @@
     <li class="nav-item active">
       <a class="nav-link" href="loginView.php">Login</a>
     </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="createAccountView.php">Create</a>
+    </li>
   </ul>
 </div>
 </nav>
