@@ -34,3 +34,14 @@ body{
     margin-left: 100px;
     width: 115px;
 }
+
+/* starts the home view css */
+#welcome-container{
+    background-color: white;
+    margin-top: 50px;
+    height: 300px;
+}
+
+#welcome{
+    text-align: center;
+}
