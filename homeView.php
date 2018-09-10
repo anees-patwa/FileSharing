@@ -25,7 +25,7 @@ session_start();
   <div>
     <h4 style="margin-left: 50px;">File Viewer</h4>
   </div>
-
+<div>
 <?php
   $dir = $_SESSION['userID'];
 
@@ -40,6 +40,7 @@ session_start();
   }
   
 ?>
+</div>
     
 </div>
   
