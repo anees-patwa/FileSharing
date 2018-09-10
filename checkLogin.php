@@ -3,6 +3,7 @@ session_start();
 ob_start();
     $userID = $_POST['userID'];
     $file = fopen("users.txt", "r");
+    $_SESSION['userID'] = $userID;
     while(!feof($file)){
         $check = trim(fgets($file));
         if(strcmp($check, $userID) == 0){

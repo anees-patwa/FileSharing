@@ -1,3 +1,7 @@
+<?php>
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -9,12 +13,35 @@
 
 <?php
   require("navBar.php");
-  echo "welcome";
-    
+  
+  
 ?>
 
 
 <body>
+
+<div class="container" id="welcome-container">
+  <h2 id="welcome"> Welcome <?php echo $_SESSION['userID'];?> </h2>
+  <div>
+    <h4 style="margin-left: 50px;">File Viewer</h4>
+  </div>
+
+<?php
+  $dir = $_SESSION['userID'];
+
+  // Open a directory, and read its contents
+  if (is_dir($dir)){
+    if ($dh = opendir($dir)){
+      while (($file = readdir($dh)) !== false){
+        echo "<a href=fileViewer.php?NAME=" . $file . ">" . $file . "</a><br>" ;
+      }
+      closedir($dh);
+    }
+  }
+  
+?>
+    
+</div>
   
 </body>
 
