@@ -27,7 +27,7 @@ session_start();
   </div>
 <div>
 <?php
-  $dir = $_SESSION['userID'];
+  $dir = makeUploadPath($_SESSION['userID'], null);
 
   // Open a directory, and read its contents
   if (is_dir($dir)){
