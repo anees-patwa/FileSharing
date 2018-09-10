@@ -27,7 +27,7 @@ session_start();
   </div>
 <div>
 <?php
-require("makeUploadPath.php");
+  require("makeUploadPath.php");
   $dir = makeUploadPath($_SESSION['userID'], null);
 
   // Open a directory, and read its contents
