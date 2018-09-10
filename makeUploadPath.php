@@ -9,7 +9,7 @@
         }
         
         if($filename == null){
-            return sprintf("/%s", $username);
+            return sprintf("/srv/module2Files/%s", $username);
         }
 
         //check valid filename
