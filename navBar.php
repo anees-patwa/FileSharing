@@ -24,6 +24,9 @@
     <li class="nav-item active">
       <a class="nav-link" href="logoutCtrl.php">Logout</a>
     </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="shareView.php">Logout</a>
+    </li>
   </ul>
 </div>
 </nav>
