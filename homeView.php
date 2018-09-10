@@ -13,7 +13,7 @@ session_start();
 
 <?php
   require("navBar.php");
-  require("makeUploadPath.php");
+  
   
 ?>
 
@@ -27,6 +27,7 @@ session_start();
   </div>
 <div>
 <?php
+require("makeUploadPath.php");
   $dir = makeUploadPath($_SESSION['userID'], null);
 
   // Open a directory, and read its contents
