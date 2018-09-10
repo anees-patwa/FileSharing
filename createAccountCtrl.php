@@ -31,7 +31,7 @@ mkdir($dirPath);
 chmod($dirPath, 777);
 
 //set username in session
-$_SESSION['username'] = $username;
+$_SESSION['userID'] = $username;
 
 //send user to their homepage
 header("Location: homeView.php");

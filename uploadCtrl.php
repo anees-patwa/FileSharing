@@ -4,7 +4,7 @@ require("makeUploadPath.php");
 
 $filename = basename($_FILES['uploadedfile']['name']);
 
-$username = $_SESSION['username'];
+$username = $_SESSION['userID'];
 
 $path = makeUploadPath($username, $filename);
 // chgrp($_FILES['uploadedfile']['tmp_name'], "module2");

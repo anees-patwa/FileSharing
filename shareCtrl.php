@@ -3,7 +3,7 @@ session_start();
 
 require("makeUploadPath.php");
 
-$currUser = $_SESSION['username'];
+$currUser = $_SESSION['userID'];
 $filename = $_POST['filename'];
 $recip = $_POST['userID'];
 
