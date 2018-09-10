@@ -13,7 +13,7 @@ session_start();
 
 <?php
   require("navBar.php");
-  
+  require("makeUploadPath.php");
   
 ?>
 
