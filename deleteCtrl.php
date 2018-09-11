@@ -1,5 +1,6 @@
 <?php
 session_start();
+require("checkUserLoggedIn.php");
 $userID = $_SESSION['userID'];
 
 $filename = $_POST['filename'];

@@ -1,7 +1,7 @@
 <?php
 session_start();
 ob_start();
-
+require("checkUserLoggedIn.php");
   require("navBar.php");
   require("makeUploadPath.php");
   

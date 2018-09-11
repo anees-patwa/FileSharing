@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require("checkUserLoggedIn.php");
     ob_start();
     session_unset();
     session_destroy();

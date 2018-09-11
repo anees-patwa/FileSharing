@@ -1,5 +1,6 @@
 <?php
   session_start();
+  require("checkUserLoggedIn.php");
   require("makeUploadPath.php");
   $dir = makeUploadPath($_SESSION['userID'], null);
   error_log("This is path opened in getFileNames   " . $dir, 0);
