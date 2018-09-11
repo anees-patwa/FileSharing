@@ -16,13 +16,16 @@ if(is_dir($currUserDirPath)){
             //copy file to other person
             if(copy(makeUploadPath($currUser, $filename), makeUploadPath($recip, $filename))){
                 header("Location: homeView.php");
+                exit();
             } else {
                 header("Location: copyFailed.html");
+                exit();
             }
         } 
             
     }
     header("Location: fileDNE.html");
+    exit();
 }
 
 

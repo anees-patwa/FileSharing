@@ -2,7 +2,7 @@
 session_start();
 ob_start();
     $userID = $_POST['userID'];
-    $file = fopen("users.txt", "r");
+    $file = fopen("/srv/module2Files/users.txt", "r");
     $_SESSION['userID'] = $userID;
     while(!feof($file)){
         $check = trim(fgets($file));

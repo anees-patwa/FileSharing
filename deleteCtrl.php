@@ -14,12 +14,14 @@ if(is_dir($currUserDirPath)){
             //copy file to other person
             if(unlink(makeUploadPath($userID, $filename))){
                 header("Location: homeView.php");
+                exit();
             } else {
                 header("Location: deleteFailed.html");
+                exit();
             }
-        } else {
-            header("Location: fileDNE.html");
         }
     }
+    header("Location: fileDNE.html");
+    exit();
 }
 ?>
