@@ -1,7 +1,6 @@
 <?php
    function makeUploadPath($username, $filename){
-       $filename = '"' . $filename . '"';
-        error_log($filename, 0);
+       //$filename = '"' . $filename . '"';
         //check valid username
         if( !preg_match('/^[\w_\-]+$/', $username) ){
             return "Invalid username";

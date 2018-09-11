@@ -7,7 +7,7 @@ body{
     background-color: white;
     margin-top: 80px;
     flex-flow: column;
-    height: 500px;
+    height: auto;
 }
 
 #login{

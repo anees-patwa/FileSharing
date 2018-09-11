@@ -19,10 +19,10 @@ if(is_dir($currUserDirPath)){
             } else {
                 header("Location: copyFailed.html");
             }
-        } else {
-            header("Location: fileDNE.html");
-        }
+        } 
+            
     }
+    header("Location: fileDNE.html");
 }
 
 
