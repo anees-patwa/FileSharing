@@ -22,7 +22,7 @@ require("navBar.php");
                 require("getFileNames.php");
                 ?>
             </div>
-            <form action="shareCtrl.php" method="POST">
+            <form action="deleteCtrl.php" method="POST">
                 <div>
                     <h4 id="user-id">File Name</h4>
                     <input name="filename" id="user-id-input"type="text">
