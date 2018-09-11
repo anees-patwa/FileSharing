@@ -22,13 +22,13 @@ while (!feof($users)){
 //add new user to users.txt
 $user = "\n" . $username;
 fwrite($users, $user);
-
+fclose($users);
 
 //make user's directory and set permissions
 require("makeUploadPath.php");
 $dirPath = makeUploadPath($username, null);
 mkdir($dirPath);
-chmod($dirPath, 777);
+chmod($dirPath, 0777);
 
 //set username in session
 $_SESSION['userID'] = $username;
