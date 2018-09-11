@@ -12,14 +12,15 @@ require("navBar.php");
 ?>
 
 <body>
-    <div>
-        <?php
-            require("getFileNames.php");
-        ?>
-    </div>
+    
         <div class="container" id="login-container">
             <div>
                <h1 id="login">Delete File</h1>
+            </div>
+            <div>
+                <?php
+                require("getFileNames.php");
+                ?>
             </div>
             <form action="shareCtrl.php" method="POST">
                 <div>
