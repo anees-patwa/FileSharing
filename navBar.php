@@ -13,13 +13,10 @@
       <a class="nav-link" href="uploadView.html">Upload</a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" href="#">Pricing</a>
+      <a class="nav-link" href="shareView.php">Share</a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" href="loginView.php">Login</a>
-    </li>
-    <li class="nav-item active">
-      <a class="nav-link" href="createAccountView.php">Create</a>
+      <a class="nav-link" href="logOutView.php">Logout </a>
     </li>
     <li class="nav-item active">
       <a class="nav-link" href="logoutCtrl.php">Logout</a>

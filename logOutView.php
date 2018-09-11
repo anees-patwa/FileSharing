@@ -1,3 +1,14 @@
+<?php
+    session_start();
+    ob_start();
+    session_unset();
+    session_destroy();
+    require("navBar.php");
+    ob_end_clean();
+    header("Location: loginView.php");
+    exit();
+    ob_end_flush();
+?>
 
 <!DOCTYPE html>
 <html>
@@ -8,27 +19,3 @@
 <link rel="stylesheet" href="loginView.css">
 </head>
 
-<?php
-  require("navBar.php");
-  
-?>
-
-
-<body>
-
-<div class="container" id="welcome-container">
-  <h2 id="welcome"> Welcome </h2>
-  <div>
-    <h4 style="margin-left: 50px;">File Viewer</h4>
-  </div>
-  <div>
-  <?php
-    require("getFileNames.php");
-  ?>
-  </div> 
-    
-</div>
-  
-</body>
-
-</html>
