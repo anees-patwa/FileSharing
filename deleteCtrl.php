@@ -4,7 +4,7 @@ $userID = $_SESSION['userID'];
 
 $filename = $_POST['filename'];
 
-
+require("makeUploadPath.php");
 $currUserDirPath = makeUploadPath($userID, null);
 
 if(is_dir($currUserDirPath)){
