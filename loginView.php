@@ -8,8 +8,7 @@
 </head>
 
 <?php
-require("navBar.php");
-
+require("loginNavBar.php");
 ?>
 
 <body>

@@ -14,7 +14,6 @@ session_start();
 <?php
   require("navBar.php");
   
-  
 ?>
 
 
@@ -40,7 +39,7 @@ session_start();
   }
   
 ?>
-    
+  
 </div>
   
 </body>
