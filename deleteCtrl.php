@@ -1,29 +1,25 @@
 <?php
 session_start();
+$userID = $_SESSION['userID'];
+
+$filename = $_POST['filename'];
 
 require("makeUploadPath.php");
-
-$currUser = $_SESSION['userID'];
-$filename = $_POST['filename'];
-$recip = $_POST['userID'];
-//check filename is valid
-$currUserDirPath = makeUploadPath($currUser, null);
+$currUserDirPath = makeUploadPath($userID, null);
 
 if(is_dir($currUserDirPath)){
     $currUserDir = opendir($currUserDirPath);
     while(($file = readdir($currUserDir)) !== false){
         if(strcmp($file, $filename) == 0){
             //copy file to other person
-            if(copy(makeUploadPath($currUser, $filename), makeUploadPath($recip, $filename))){
+            if(unlink(makeUploadPath($userID, $filename))){
                 header("Location: homeView.php");
             } else {
-                header("Location: copyFailed.html");
+                header("Location: deleteFailed.html");
             }
         } else {
             header("Location: fileDNE.html");
         }
     }
 }
-
-
 ?>

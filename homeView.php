@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 
 <!DOCTYPE html>
 <html>
@@ -21,32 +18,15 @@ session_start();
 <body>
 
 <div class="container" id="welcome-container">
-  <h2 id="welcome"> Welcome <?php echo $_SESSION['userID'];?> </h2>
+  <h2 id="welcome"> Welcome </h2>
   <div>
     <h4 style="margin-left: 50px;">File Viewer</h4>
   </div>
-<div>
-<?php
-  
-  require("makeUploadPath.php");
-  $dir = makeUploadPath($_SESSION['userID'], null);
-
-  // Open a directory, and read its contents
-  if (is_dir($dir)){
-    
-    if ($dh = opendir($dir)){
-      
-      while (($file = readdir($dh)) !== false){
-        echo "<a href=fileViewer.php?NAME=" . $file . ">" . $file . "</a><br>" ;
-      }
-      closedir($dh);
-    }
-  }
-
- 
-  
-?>
-</div>
+  <div>
+  <?php
+    require("getFileNames.php");
+  ?>
+  </div>
     
 </div>
   
