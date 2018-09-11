@@ -10,7 +10,7 @@
       <a class="nav-link" href="homeView.php">Home <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" href="uploadView.html">Upload</a>
+      <a class="nav-link" href="uploadView.php">Upload</a>
     </li>
     <li class="nav-item active">
       <a class="nav-link" href="shareView.php">Share</a>
