@@ -16,13 +16,10 @@
       <a class="nav-link" href="shareView.php">Share</a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" href="logOutView.php">Logout </a>
+      <a class="nav-link" href="deleteView.php">Delete</a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" href="logoutCtrl.php">Logout</a>
-    </li>
-    <li class="nav-item active">
-      <a class="nav-link" href="shareView.php">Logout</a>
+      <a class="nav-link" href="logOutView.php">Logout</a>
     </li>
   </ul>
 </div>
