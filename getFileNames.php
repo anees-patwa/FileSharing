@@ -1,5 +1,5 @@
 <?php
-  
+  session_start();
   require("makeUploadPath.php");
   $dir = makeUploadPath($_SESSION['userID'], null);
 

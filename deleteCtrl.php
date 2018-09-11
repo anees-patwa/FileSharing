@@ -1,4 +1,5 @@
 <?php
+session_start();
 $userID = $_SESSION['userID'];
 
 $filename = $_POST['filename'];
