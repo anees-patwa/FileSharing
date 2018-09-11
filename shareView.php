@@ -16,6 +16,11 @@ require("navBar.php");
             <div>
                <h1 id="login">Share File</h1>
             </div>
+            <div>
+            <?php
+                require("getFileNames.php");
+            ?>
+            </div>
             <form action="shareCtrl.php" method="POST">
                  <div>
                     <h4 id="user-id">Recipient's UserID</h4>

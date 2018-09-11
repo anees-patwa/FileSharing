@@ -22,11 +22,11 @@
   <div>
     <h4 style="margin-left: 50px;">File Viewer</h4>
   </div>
-<div>
-<?php
-  require("getFileNames.php");
-?>
-</div>
+  <div>
+  <?php
+    require("getFileNames.php");
+  ?>
+  </div>
     
 </div>
   
