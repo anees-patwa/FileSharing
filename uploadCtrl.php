@@ -3,7 +3,7 @@ session_start();
 require("makeUploadPath.php");
 
 $filename = basename($_FILES['uploadedfile']['name']);
-
+error_log($filename, 0);
 $username = $_SESSION['userID'];
 
 $path = makeUploadPath($username, $filename);
