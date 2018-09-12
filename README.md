@@ -20,5 +20,6 @@ http://ec2-18-223-143-71.us-east-2.compute.amazonaws.com/~apatwa/module2Grp/logi
 
 # Notes
 - two users already exist ("mandoq", "apatwa")
+- Design optimized for Chrome (Some buttons render slightly differently in Firefox)
 
 
